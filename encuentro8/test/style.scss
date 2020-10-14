@@ -1,0 +1,16 @@
+@import "vars";
+
+.diferente {
+   color:$green;
+   &:hover {
+      color:$yellow;
+   }
+}
+
+label {
+   color: $green;
+   background-color: $yellow;
+}
+h1, span {
+   font-size: $font-size-title;
+}

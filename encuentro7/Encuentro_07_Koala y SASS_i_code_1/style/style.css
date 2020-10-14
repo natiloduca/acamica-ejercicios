@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*segmentación de estilos*/
+/*existe como file _variables para que al compilar no tenga su contrapartida en css*/
+/*selector universal*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  background-color: #EB4511; }
+
+/* mixin = include
+extend = hereda */
+/*Extensión de estilo con prefijo % 
+(identifica a una clase que se crea únicamente con el fin de utilizarla en otras clase)*/
+form .ctn-btn button[type="reset"], form .ctn-btn button[type="submit"] {
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  color: #fff;
+  filter: brightness(90%);
+  /*operador & significa que si tiene una regla anidada, primero se calcula el selector padre completo y después se reemplaza por &
+  se compila a button:hover*/ }
+  form .ctn-btn button[type="reset"]:hover, form .ctn-btn button[type="submit"]:hover {
+    filter: brightness(110%); }
+
+body {
+  background: #FEFDFF;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/*anidamiento*/
+form {
+  background: #D5E2EA;
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ACC6D6;
+  /*
+  input:focus{
+          border: 1px dashed $btn-primary;
+  }*/ }
+  form input, form textarea {
+    border-radius: 5px;
+    border: 1px solid #ACC6D6;
+    width: 100%;
+    padding: 10px;
+    display: block; }
+    form input:focus, form textarea:focus {
+      border: 1px dashed #8EB1C7; }
+  form textarea {
+    /*Extensión de estilo de un elemento particular*/
+    resize: none; }
+  form label {
+    display: inline-block;
+    margin: 10px 0; }
+  form .ctn-btn {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0; }
+    form .ctn-btn button[type="reset"] {
+      /*Extensión de estilo con prefijo %*/
+      background: #EB4511;
+      margin-right: 20px; }
+    form .ctn-btn button[type="submit"] {
+      background: #8EB1C7; }
+
+/*# sourceMappingURL=style.css.map */

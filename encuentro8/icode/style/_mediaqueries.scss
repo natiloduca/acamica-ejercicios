@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px){
+   .box-media {
+       background: $green;
+   }
+   .box-media::after {
+       content: "CAJA DESDE 768px a 1200 de width";
+   }     
+}
+@media screen and (min-width: 1200px){
+   .box-media {
+       background: $yellow;
+   }
+   .box-media::after {
+       content: "CAJA DESDE 1200 en adelante de width";
+   }    
+}

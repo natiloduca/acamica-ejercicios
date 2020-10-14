@@ -1,0 +1,87 @@
+/*importacion de archivos parciales*/
+/*variables*/
+/*main*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+h2 {
+  margin: 20px 0; }
+
+/*vmax y vmin*/
+h3 {
+  font-size: 10vmin;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  text-align: center; }
+
+.box {
+  width: 100vmin;
+  height: 20vmin;
+  background: #6beeff; }
+
+h4 {
+  font-size: 10vmax;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  text-align: center; }
+
+.box-max {
+  width: 100vmax;
+  height: 20vmax;
+  background: #6beeff; }
+
+/*vh y vw*/
+.box-vh {
+  width: 10vh;
+  height: 10vh;
+  background: #6beeff; }
+
+.box-vw {
+  width: 10vw;
+  height: 10vw;
+  background: #6beeff; }
+
+/*ver media queries*/
+.box-media {
+  height: 50px;
+  background: #6beeff; }
+
+.box-media::after {
+  content: "Caja desde 0 a 768px de width"; }
+
+/*em y rem*/
+html {
+  font-size: 16px; }
+
+.parrafo {
+  font-size: 25px; }
+
+.span-rem {
+  font-size: 1rem;
+  color: red; }
+
+.span-em {
+  font-size: 1em;
+  color: red; }
+
+.bold {
+  font-weight: bold; }
+
+/*mediaqueries*/
+@media screen and (min-width: 768px) {
+  .box-media {
+    background: #6bff84; }
+
+  .box-media::after {
+    content: "CAJA DESDE 768px a 1200 de width"; } }
+@media screen and (min-width: 1200px) {
+  .box-media {
+    background: #e9ff6b; }
+
+  .box-media::after {
+    content: "CAJA DESDE 1200 en adelante de width"; } }
+
+/*# sourceMappingURL=style.css.map */

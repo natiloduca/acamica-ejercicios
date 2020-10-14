@@ -1,0 +1,118 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /*box-sizing es una propiedad CSS para cambiar el modelo de caja por defecto de los navegadores.
+   Con border-box, hacemos que el ancho especificado sea el equivalente al ancho total*/
+}
+
+body {
+   position: relative; /*se ubica relativo al bloque contenedor inicial, depende del flujo normal de la pagina*/
+   top:10%;
+
+   /*position: absolute; 
+    permite posicionar elementos de manera absoluta por valores de los atributos top, left, bottom y right*/
+}
+
+main {
+   height: 1300px;
+   padding-left: 20px ;
+}
+
+h2, h3 {
+ margin: 20px 0;
+}
+
+.box {
+   display: inline-block;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   padding: 20px;
+   background-color: #7ae3e7;
+   text-align: center;
+}
+
+/*display*/
+.block-boxes .box {
+   height: 50px;
+   width: 50px;
+   display: block;
+}
+
+.inlines-boxes .box {
+   /*height y width que no esta tomando*/
+   height: 50px;
+   width: 50px;
+   display: inline;
+   padding: 3px;    
+}
+
+.inline-block-boxes .box{
+   height: 50px;
+   width: 50px;
+}
+
+/*float*/
+.box-father {
+  background: #257db8;
+  width: 700px;
+ /*overflow*/
+  overflow: hidden;
+}
+
+.float-box {
+  width: 200px;
+  color: #fff;
+ text-align: center;
+  font-size: 38px;
+  height: 200px;
+  background: #7ae3e7;
+  margin: 20px;
+}
+
+.first-box {
+  float: left;
+}
+
+.second-box {
+  float: right;
+}
+
+/*position*/
+/*relative, absolute exactamente igual bottom y left, cambio en base a referencia*/
+
+/*position: absolute; 
+ permite posicionar elementos de manera absoluta por valores de los atributos top, left, bottom y right*/
+.absolute {
+   position: absolute;
+   bottom: 50px;
+   left: 196px;
+}
+/*se ubica relativo al bloque contenedor inicial, depende del flujo normal de la pagina*/
+.relative {
+   position: relative;
+   bottom: 50px;
+   left: 196px;
+   background: green;
+}
+
+.sticky{
+   top:100px; /*requerido para que funcione sticky indica posicion donde quedara fijo*/
+   position: sticky; /*es parecido a relativo pero sirve al momento de scrollear queda fijo*/
+   left: 500px;
+   background-color:red;
+}
+
+.fixed { /*Este atributo sirve para posicionar una capa con posicionamiento absoluto, 
+   pero su posición final será siempre fija*/
+   position: fixed;
+   top: 400px;
+   right: 600px;
+   background-color: orange;
+}
+
+.box-container {
+   height: 100%;
+   margin-top: 80px;
+
+}

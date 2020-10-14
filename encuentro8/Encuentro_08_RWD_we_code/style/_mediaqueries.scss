@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 500px) {
+   header, nav {
+      float: none;
+      width: 100%;
+      display: block;
+      height: 100px;
+   }   
+   main{
+      & .articleContainer .articuloDerecho {
+         display: block;
+      }
+   }
+}

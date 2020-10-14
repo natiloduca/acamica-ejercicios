@@ -1,0 +1,35 @@
+/*header-fixed*/
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 60px;
+   background: $white;
+   padding: 5px 30px;
+   border-bottom: 2px solid $border-color ;
+}
+/*logo y titulo a la izquierda*/
+header .logo { 
+   float: left;
+}
+header h1 {
+   float: left;
+   margin-left: 10px;
+   line-height: 60px;
+}
+/*nav a la derecha*/
+header nav {
+   float: right;
+}
+/*items del menu colocados uno al lado del otro - en fila*/
+header nav li {
+   display: inline;
+   padding-left: 10px;
+   list-style: none;
+   line-height: 60px;
+   &:hover {
+      color: $border-color;
+      transition: all 1s ease;
+   }
+}

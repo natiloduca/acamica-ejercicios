@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inscripciones Acamica</h1>
+    <h2>Hasta el 28 de Octubre</h2>
+    <main>
+            <form action="info.html" target="_blank">
+                <p>
+                    Nombre: <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                </p>
+                <p>
+                    Apellido: <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+                </p>
+                <p>
+                    Email: <input type="text" name="email" placeholder="Ingrese su email" required>
+                </p>
+                <label for="pais">Seleccione su pais de residencia:</label>
+                <select name="country" id="Country" required>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+                <br>
+                <p>
+                    <label for="phone">Telefono de contacto</label>
+                    <input type="number" name="phone" id="phone">
+                </p>
+            <fieldset>
+                <legend>Carrera a inscribirse</legend>
+                                <p>
+                                    <input type="checkbox" name="UX/UI" id="UX/UI">UX/UI<br>
+                                    <input type="checkbox" name="Data Science" id="Data Science">Data Science<br>
+                                    <input type="checkbox" name="Desarrollo Web Full Stack" id="Desarrollo Web Full Stack">Desarrollo Web Full Stack<br>
+                                    <input type="checkbox" name="FrontEnd Avanzado" id="FrontEnd Avanzado">FrontEnd Avanzado<br>
+                                </p>
+                        </fieldset>
+            <fieldset>
+                <legend>Modalidad</legend>
+
+                    <p>  
+                        <input type="radio" name="turno" value="am">Presencial <br>
+                        <input type="radio" name="turno" value="pm">Online
+                    </p>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>¿Estas trabajando actualmente?</legend>
+
+                    <p>  
+                        <input type="radio" name="trabajo actual" value="con empleo">Si <br>
+                        <input type="radio" name="trabajo actual" value="sin empleo">No
+                    </p>
+
+            </fieldset>
+            <fieldset> 
+                <legend>Descripcion personal</legend><br>
+                <input type="text" 
+                id="sessionNo" 
+                name="sessionNum" 
+                onkeypress="return isNumberKey(event)" 
+                maxlength="300" 
+                size="100"/>
+            </fieldset>     
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+</body>
+</html> 

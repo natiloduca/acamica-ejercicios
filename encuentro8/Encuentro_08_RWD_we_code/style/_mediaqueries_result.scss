@@ -1,0 +1,37 @@
+@media screen and (max-width: 500px){
+    /*mismo anidamiento que como se lo estiló inicialmente*/
+    /*baja el menu*/
+    header {
+        height: 100px;
+        .logo { 
+            float: none;
+            display: inline-block;
+        }
+        h1 {
+            float: none;
+            display: inline-block;
+            line-height: 0;
+        }
+        nav {
+            float: none;
+            li {
+                padding-left: 0;
+                line-height: 40px;
+            }
+        }
+    }
+    main {
+        /*aumentado padding por cambio de la altura del header*/
+        padding-top: 100px;
+        /*un artículo abajo de otro*/
+        .articleContainer {
+            .articuloIzquierdo {
+                float: unset;
+                width: 100%;
+            }
+            .articuloDerecho {
+                width: 100%;
+            }
+        }
+    }
+}

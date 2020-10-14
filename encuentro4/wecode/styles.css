@@ -1,0 +1,22 @@
+body{
+   font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+nav {
+   border-bottom: 20px;
+}
+li {
+   list-style: none;
+}
+h2 {
+   color:red;
+   text-align: center;
+   font-size: 24px;
+}
+p {
+   color:gray;
+   font-size: 16px;
+}
+
+form {
+   border: 2px double green;
+}

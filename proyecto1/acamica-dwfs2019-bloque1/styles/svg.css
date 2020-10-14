@@ -1,0 +1,20 @@
+.content-svg {
+  width: 104px;
+  height: 104px;
+}
+
+.remote-work-svg {
+  background: url('../assets/remote-work.svg')
+}
+
+.rethinkning-programming-svg {
+  background: url('../assets/rethinkning-programming.svg')  
+}
+
+.code-bases-svg {
+  background: url('../assets/code-bases.svg')  
+}
+
+.security-svg {
+  background: url('../assets/security.svg')  
+}

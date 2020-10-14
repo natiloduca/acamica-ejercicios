@@ -1,0 +1,21 @@
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media only screen and (min-device-width: 1024px) {
+  .sections a:hover{
+    color: var(--secondary-color);
+    text-decoration: line-through;
+  }
+
+  .sections a:active{
+    color: #060A24;
+    opacity: .56;
+  }
+
+  a.suscribe:hover {
+    color: var(--background-color);
+    background-image: linear-gradient(to left, #0000FE 0%, #00F0B8 100%);
+  }
+}
+

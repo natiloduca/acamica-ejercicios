@@ -1,0 +1,13 @@
+.diferente {
+  color: blue; }
+  .diferente:hover {
+    color: yellow; }
+
+label {
+  color: blue;
+  background-color: yellow; }
+
+h1, span {
+  font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */

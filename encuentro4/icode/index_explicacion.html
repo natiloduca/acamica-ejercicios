@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style type="text/css">
+      /* selector de elemento */
+      /*div { background-color:green; } */
+      /*selector de elem descendientes elem1 elem2, no importa q tiene una "p" en el medio */
+      /*div div div a{
+         background-color:red;
+         color:yellow;
+      }*/
+      /*p a { color: red; }*/
+      /*#abuelo div{ background-color:green; }*/
+
+      /*selector de class*/
+      /*.padre{ background-color:#009cde; }*/
+      /*Selector de identificador: #id*/
+      /*#abuelo { background-color: blueviolet; }*/
+      /*selector global: */
+       /*{ margin:0; }*/
+      /*Selector de adyacencia: elementoA + elementoB*/
+      /*.padre + p { background-color:darkorange; }*/
+      /*Selector de hijos directos: elementoA > elementoB*/
+      /*p > a { color: red; }*/
+
+      /*#abuelo > div{ background-color:deeppink; }*/
+      /*Selector de hermanos: elementoA ~ elementoB*/
+      /*.padre ~ p{ background-color:grey; }*/
+      /*Selector de atributo: [atributo]*/
+      /*a[title]{ background-color:lightblue; }*/
+      /*Selector de valor de atributo: [atributo=valor]*/
+     /* a[title="Título hijo1"]{ background-color:lightslategray; }*/
+      /*Selector de término de atributo: [atributo~=término]*/
+      /*a[title~="Título"]{ background-color:red; }*/
+      
+      
+      
+   </style>
+</head>
+<body>
+   <!--<p>
+      <a href="#">Enlace1</a>
+    </p>
+    <p>
+      <span>
+        <a href="#">Enlace2</a>
+      </span>
+    </p>-->
+   <div id="abuelo">
+      <p>Párrafo 1</p>
+      <p>Párrafo 2</p>
+
+      <p class="padre">
+         <div class="hijo"><a title="Título hijo1">HIJO1</a></div>
+         <div class="hijo"><a>HIJO2</a></div>
+         <div class="hijo"><a>HIJO3</a></div>
+      </p>
+      <p>Párrafo 3</p>
+      <p>Párrafo 4</p>
+
+
+
+      <div class="padre">
+         <div class="hijo"><a title="Título hijo4">HIJO4</a></div>
+         <div class="hijo"><a>HIJO5</a></div>
+         <div class="hijo"><a>HIJO6</a></div>
+      </div>
+      <p>Párrafo 5</p>
+      <p>Párrafo 6</p>
+   </div>
+</body>
+</html>
